@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tome of Recall</title>
+    <style>
+        body {
+            font-family: serif;
+            background-color: #2D2B3E;
+            color: #F9E8D9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #4A3E4F;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: #F9E8D9;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+        main {
+            padding: 4rem 0;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 3rem;
+        }
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: #D85C27;
+            opacity: 0.2;
+            filter: blur(20px);
+            border-radius: 50%;
+        }
+        .hero-image img {
+            position: relative;
+            z-index: 1;
+        }
+        .btn {
+            background-color: #D85C27;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+        .features {
+            margin-top: 6rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            background-color: #4A3E4F;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+        .newsletter {
+            margin-top: 6rem;
+            text-align: center;
+        }
+        .newsletter form {
+            display: flex;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .newsletter input {
+            flex-grow: 1;
+            padding: 0.5rem;
+            border: 1px solid #D85C27;
+            background-color: #4A3E4F;
+            color: #F9E8D9;
+        }
+        footer {
+            background-color: #4A3E4F;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Tome of Recall</div>
+            <div class="nav-links">
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 style="font-size: 3rem; font-weight: bold; line-height: 1.2;">Enhance Your Tabletop Adventures</h1>
+                <p style="font-size: 1.25rem;">The Tome of Recall: Your ultimate companion for Pathfinder and Dungeons & Dragons. Never forget a crucial detail again!</p>
+                <button class="btn">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="/placeholder.svg?height=400&width=400" alt="Tome of Recall" width="400" height="400">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 style="font-size: 2rem; font-weight: bold; text-align: center; margin-bottom: 2rem;">Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div style="color: #D85C27; font-size: 3rem; margin-bottom: 1rem;">📖</div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Extensive Lore Database</h3>
+                    <p>Access a vast collection of game lore, characters, and locations at your fingertips.</p>
+                </div>
+                <div class="feature-card">
+                    <div style="color: #D85C27; font-size: 3rem; margin-bottom: 1rem;">✒️</div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Quick Note-Taking</h3>
+                    <p>Jot down important information during your game sessions with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <div style="color: #D85C27; font-size: 3rem; margin-bottom: 1rem;">📜</div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Custom Campaign Tracking</h3>
+                    <p>Keep track of your unique campaign details and player character information.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">Join Our Community</h2>
+            <p style="max-width: 400px; margin: 0 auto 1rem;">Subscribe to our newsletter for the latest updates and tips for your tabletop adventures.</p>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tome of Recall. All rights reserved.</p>
+    </footer>
+</body>
+</html>
